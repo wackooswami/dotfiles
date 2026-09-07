@@ -1,0 +1,41 @@
+# Identity
+set realname = "Zachary Smith"
+set from = "ztstexas@gmail.com"
+
+# IMAP inbox
+set imap_user = "ztstexas@gmail.com"
+set folder = "imaps://imap.gmail.com/"
+set spoolfile = "+INBOX"
+
+
+set imap_authenticators = "oauthbearer:xoauth2"
+set imap_oauth_refresh_command = "python3 /home/zach/.secrets/gmailOAuth/mutt_oauth2.py  /home/zach/.secrets/gmailOAuth/token.gpg"
+set postponed = "+[Gmail]/Drafts"
+set record = "+[Gmail]/Sent Mail"
+set trash = "+[Gmail]/Trash"
+
+# SMTP sending
+# set smtp_url  = "smtps://you@example.com@smtp.example.com:465/"
+set smtp_authenticators=${imap_authenticators}
+set smtp_oauth_refresh_command=${imap_oauth_refresh_command}
+
+# set smtp_pass = "secret"   # or leave unset to be prompted
+
+# Editor for composing messages
+set editor = "nvim"
+
+# Basic behaviour
+set sort         = threads        # thread messages by conversation
+set sort_aux     = reverse-last-date-received
+set mark_old     = no             # don't mark new messages as old on exit
+set mime_forward = ask-yes        # ask whether to forward as attachment
+
+set sidebar_visible
+set sidebar_format = "%B%<F? [%F]>%* %<N?%N/>%S"
+set mail_check_stats
+
+# Headers to hide in the pager
+ignore *
+unignore from: to: cc: date: subject:
+hdr_order from: to: cc: date: subject:
+

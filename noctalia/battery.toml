@@ -1,0 +1,9 @@
+[battery]
+warning_threshold = 10 # 0 disables low-battery warnings
+
+[battery.device."/org/freedesktop/UPower/devices/battery_BAT0"]
+warning_threshold = 15
+
+[battery.device."/org/freedesktop/UPower/devices/headset_dev_00_11_22_33_44_55"]
+warning_threshold = 10
+
