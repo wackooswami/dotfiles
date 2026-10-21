@@ -14,7 +14,7 @@ DOTFILES_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 TARGET_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
 
 # Directories that live in the repo but aren't stow packages.
-EXCLUDE=(.git README.md setup.sh)
+EXCLUDE=(.git README.md setup.sh screenshots)
 
 color() { printf '\033[%sm%s\033[0m\n' "$1" "$2"; }
 info()  { color '1;34' "==> $*"; }
