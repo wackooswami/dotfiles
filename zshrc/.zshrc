@@ -1,5 +1,9 @@
 # path to your oh my zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export LIBVIRT_DEFAULT_URI=qemu:///system 
+
+autoload -Uz compinit
+compinit
 
 ZSH_THEME="lambda"
 

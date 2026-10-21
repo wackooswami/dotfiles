@@ -10,10 +10,10 @@ edge_smoothness     = 0.3       # 0.0 – 1.0
 transition_on_startup = false   # animate the first wallpaper at shell startup (v4-style)
 
 # Directory browsed by the wallpaper picker panel
-directory           = "/home/zach/Wallpapers"
+directory           = "/home/wackoo/Wallpapers"
 # Theme-aware directories (used when theme mode is Light/Dark; Auto falls back to directory)
-directory_light     = "/home/zach/Wallpapers/Light"
-directory_dark      = "/home/zach/Wallpapers/Dark"
+directory_light     = "/home/wackoo/Wallpapers/Light"
+directory_dark      = "/home/wackoo/Wallpapers/Dark"
 # Enable per-monitor directory overrides (default: false)
 per_monitor_directories = false
 
@@ -31,8 +31,8 @@ recursive                    = true     # scan subdirectories when selecting ran
 [wallpaper.monitor.DP-2]
 enabled         = false
 fill_color      = "#202020"
-directory       = "/home/zach/Wallpapers/Vertical"
-directory_light = "/home/zach/Wallpapers/Vertical/Light"
-directory_dark  = "/home/zach/Wallpapers/Vertical/Dark"
+directory       = "/home/wackoo/Wallpapers/Vertical"
+directory_light = "/home/wackoo/Wallpapers/Vertical/Light"
+directory_dark  = "/home/wackoo/Wallpapers/Vertical/Dark"
 
 
